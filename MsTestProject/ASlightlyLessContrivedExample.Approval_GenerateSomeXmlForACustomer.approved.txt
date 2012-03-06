@@ -1,0 +1,14 @@
+<Customer>
+  <Firstname>Bart</Firstname>
+  <Lastname>Simpson</Lastname>
+  <Birthday>1989-12-17T00:00:00</Birthday>
+  <HomeAddress>
+    <City>Springfield</City>
+    <State>XY</State>
+    <Zip>55555</Zip>
+  </HomeAddress>
+  <DriversLicense>EatMyShorts</DriversLicense>
+  <SSN>123456789</SSN>
+  <Phone1>1112223333</Phone1>
+  <Phone2>9998887777</Phone2>
+</Customer>
