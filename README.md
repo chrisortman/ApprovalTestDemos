@@ -10,6 +10,7 @@ Adds 2 assemblies, ApprovalTests & ApprovalUtilities
 Install [TortoiseMerge](http://tortoisesvn.net/downloads.html)
 *Have to install tortoise svn too? sad panda*
 
+Add *.received.* to your .gitignore
 ### IMPORTANT ###
 If you are verifying a single proparty like customer.Fullname() make sure
 to put a new line at the end in your call to .Verify otherwise the diff / merge
