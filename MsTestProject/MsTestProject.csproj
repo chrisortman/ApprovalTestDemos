@@ -39,6 +39,8 @@
     <Reference Include="ApprovalUtilities">
       <HintPath>..\packages\ApprovalTests.1.4\lib\ApprovalUtilities.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -47,7 +49,9 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -64,6 +68,11 @@
     <Compile Include="Helpers\KdiffReporter.cs" />
     <Compile Include="Helpers\PsClipboardReporter.cs" />
     <Compile Include="Lib\Customer.cs" />
+    <Compile Include="Lib\InvoiceReportDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceReportDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Lib\InvoiceView.xaml.cs">
       <DependentUpon>InvoiceView.xaml</DependentUpon>
     </Compile>
@@ -75,12 +84,31 @@
     <Compile Include="Lib\InvoiceUserControl.Designer.cs">
       <DependentUpon>InvoiceUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lib\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lib\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="1_TraditionalSpecificationTest.cs" />
     <Compile Include="3_VerificationOfGuiScreens.cs" />
+    <Compile Include="4_VerifyRdlcReport.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Lib\InvoiceReportDataset.xsc">
+      <DependentUpon>InvoiceReportDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Lib\InvoiceReportDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceReportDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Lib\InvoiceReportDataset.xss">
+      <DependentUpon>InvoiceReportDataset.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MsTestProject.Lib.Invoice.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Lib\InvoiceView.xaml">
@@ -89,8 +117,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Lib\BilledInvoicesReport.rdlc" />
     <EmbeddedResource Include="Lib\InvoiceUserControl.resx">
       <DependentUpon>InvoiceUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lib\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

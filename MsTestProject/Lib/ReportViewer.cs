@@ -9,17 +9,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class ReportViewer : Form
     {
-        public Form1()
+        public ReportViewer()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ReportViewer_Load(object sender, EventArgs e)
         {
-            var reportviewer = new ReportViewer();
-            reportviewer.ShowDialog(this);
+
+            this.reportViewer1.RefreshReport();
         }
     }
 }
