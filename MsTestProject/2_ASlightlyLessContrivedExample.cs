@@ -106,5 +106,21 @@ namespace MsTestProject
 
             Approvals.Verify(invoice);
         }
+
+        [TestMethod]
+        [UseReporter(typeof(DiffReporter))]
+        public void Approval_VerifyLineItems()
+        {
+            var order = new Order();
+            order.Add("Cheetos", 5M);
+            order.Add("Doritos", 3M);
+            order.Add("Mountain Dew", 5M);
+            order.SalesTax = .06M;
+
+            order.Customer = _customer;
+
+            Invoice invoice = order.GenerateInvoice();
+            Approvals.VerifyAll("LineItems", invoice.LineItems, "line_item");
+        }
     }
 }
