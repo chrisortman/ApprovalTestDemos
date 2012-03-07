@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using ApprovalTests;
 using ApprovalTests.Reporters;
+using ApprovalTests.WinForms;
 using ApprovalTests.Wpf;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MsTestProject.Helpers;
@@ -19,6 +20,12 @@ namespace MsTestProject
             var view = new InvoiceView();
             wpfWindow.Content = view;
             WpfApprovals.Verify(wpfWindow);
+        }
+
+        [TestMethod]
+        public void VerifyInvoiceUserControl()
+        {
+            WinFormsApprovals.Verify(new InvoiceUserControl());
         }
     }
 }
