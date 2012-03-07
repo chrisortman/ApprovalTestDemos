@@ -1,0 +1,42 @@
+Processing feature Feature1 with id 1
+Adjust price by 2% because of odd feature ID 1
+Processing feature Feature2 with id 2
+Processing feature Feature3 with id 3
+Adjust price by 2% because of odd feature ID 3
+Processing feature Feature4 with id 4
+Processing feature Feature5 with id 5
+Adjust price by 2% because of odd feature ID 5
+Processing feature Feature6 with id 6
+Processing feature Feature7 with id 7
+Adjust price by 2% because of odd feature ID 7
+Processing feature Feature8 with id 8
+Remove feature because of activation date 9/15/2009 12:00:00 AM
+Execute SQL
+DELETE FROM Features Where Id = 8
+Processing feature Feature9 with id 9
+Adjust price by 2% because of odd feature ID 9
+Processing feature Feature10 with id 10
+Processing feature Feature11 with id 11
+Adjust price by 2% because of odd feature ID 11
+Processing feature Feature12 with id 12
+Remove feature because of activation date 1/15/2010 12:00:00 AM
+Execute SQL
+DELETE FROM Features Where Id = 12
+Processing feature Feature13 with id 13
+Adjust price by 2% because of odd feature ID 13
+Processing feature Feature14 with id 14
+Processing feature Feature15 with id 15
+Adjust price by 2% because of odd feature ID 15
+Processing feature Feature16 with id 16
+Remove feature because of activation date 2/15/2010 12:00:00 AM
+Execute SQL
+DELETE FROM Features Where Id = 16
+Processing feature Feature17 with id 17
+Adjust price by 2% because of odd feature ID 17
+Remove feature because of activation date 6/15/2008 12:00:00 AM
+Execute SQL
+DELETE FROM Features Where Id = 17
+Processing feature Feature18 with id 18
+Processing feature Feature19 with id 19
+Adjust price by 2% because of odd feature ID 19
+Processing feature Feature20 with id 20

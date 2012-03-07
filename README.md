@@ -24,7 +24,7 @@ Install [TortoiseMerge](http://tortoisesvn.net/downloads.html)
 Add *.received.* to your .gitignore
 
 ### IMPORTANT ###
-If you are verifying a single proparty like customer.Fullname() make sure
+If you are verifying a single property like customer.Fullname() make sure
 to put a new line at the end in your call to .Verify otherwise the diff / merge
 tools get confused about line endings.
 
