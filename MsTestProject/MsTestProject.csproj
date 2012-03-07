@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2_ASlightlyLessContrivedExample.cs" />
+    <Compile Include="5_CombinatorialTesting.cs" />
     <Compile Include="Helpers\KdiffReporter.cs" />
     <Compile Include="Helpers\PsClipboardReporter.cs" />
     <Compile Include="Lib\Customer.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Lib\InvoiceUserControl.Designer.cs">
       <DependentUpon>InvoiceUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lib\PaymentService.cs" />
     <Compile Include="Lib\ReportViewer.cs">
       <SubType>Form</SubType>
     </Compile>
