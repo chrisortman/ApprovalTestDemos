@@ -26,7 +26,7 @@ namespace MsTestProject
                 "BankDraft",
             };
             var amounts = new[] {0M, 10M, 100M, 200M};
-            var customerLocations = new[] {"SD", "IA"};
+            var customerLocations = new[] {"SD", "IA","NE"};
 
             CombinationApprovals.VerifyAllCombinations((allowedPaymentTypes,amount,location) =>
             {

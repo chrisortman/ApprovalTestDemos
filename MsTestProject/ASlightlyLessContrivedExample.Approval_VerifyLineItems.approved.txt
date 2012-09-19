@@ -1,5 +1,5 @@
-LineItems
+====LineItems====
 
-line_item[0] = Cheetos.......$5.00
-line_item[1] = Doritos.......$3.00
-line_item[2] = Mountain Dew.......$5.00
+LineItems[0] = Cheetos.......$5.00
+LineItems[1] = Doritos.......$3.00
+LineItems[2] = Mountain Dew.......$5.00

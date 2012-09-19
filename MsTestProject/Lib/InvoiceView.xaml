@@ -6,6 +6,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="509" d:DesignWidth="502">
     <Grid>
+        <Rectangle Height="100"
+                   HorizontalAlignment="Left"
+                   Margin="292,324,0,0"
+                   Name="rectangle1"
+                   Stroke="Black"
+                   VerticalAlignment="Top"
+                   Width="200"
+                   Fill="#FFF5D361" />
         <TextBlock Height="23"
                    HorizontalAlignment="Left"
                    Margin="32,32,0,0"

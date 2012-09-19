@@ -28,9 +28,6 @@ Processing feature Feature14 with id 14
 Processing feature Feature15 with id 15
 Adjust price by 2% because of odd feature ID 15
 Processing feature Feature16 with id 16
-Remove feature because of activation date 2/15/2010 12:00:00 AM
-Execute SQL
-DELETE FROM Features Where Id = 16
 Processing feature Feature17 with id 17
 Adjust price by 2% because of odd feature ID 17
 Remove feature because of activation date 6/15/2008 12:00:00 AM

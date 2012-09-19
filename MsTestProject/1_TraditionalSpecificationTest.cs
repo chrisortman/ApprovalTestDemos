@@ -29,7 +29,7 @@ namespace MsTestProject
             var customer = new Customer
             {
                 Firstname = "Bartx",
-                Lastname = "Simpson"
+                Lastname = "SImpson"
             };           
             Approvals.Verify(customer.Fullname() + Environment.NewLine);
         }

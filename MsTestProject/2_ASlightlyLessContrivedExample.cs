@@ -120,7 +120,7 @@ namespace MsTestProject
             order.Customer = _customer;
 
             Invoice invoice = order.GenerateInvoice();
-            Approvals.VerifyAll("LineItems", invoice.LineItems, "line_item");
+            Approvals.VerifyAll("====LineItems====", invoice.LineItems, "LineItems");
         }
     }
 }

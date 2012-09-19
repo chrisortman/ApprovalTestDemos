@@ -37,10 +37,12 @@ namespace MsTestProject
                 "18,Feature18,1/15/2011",
                 "19,Feature19,1/15/2011",
                 "20,Feature20,1/15/2011",
+                "21,Feature20,1/15/2011",
 
             });
 
             Approvals.Verify(task.Log.Dump());
+            
         }
     }
     public class DataCleanupTask
@@ -80,7 +82,7 @@ namespace MsTestProject
                     Log.Message("Adjust price by 2% because of odd feature ID " + record.FeatureId);
                 }
 
-                if(record.ActivationDate < new DateTime(2010, 3, 25))
+                if(record.ActivationDate < new DateTime(2010, 1, 25))
                 {
                     Log.Message("Remove feature because of activation date " + record.ActivationDate);
                     Log.TraceSql(String.Format(@"
